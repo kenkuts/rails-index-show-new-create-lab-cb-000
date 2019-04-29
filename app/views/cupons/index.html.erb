@@ -1,0 +1,6 @@
+<h1>Cupons</h1>
+
+<% @cupons.each do |cupon| %>
+  <div><%= link_to cupon.store, cupon_path(cupon)%></div>
+<% end %>
+<%= button_to "Create Cupons", new_cupon_path, html_options = {:method => :get } %>

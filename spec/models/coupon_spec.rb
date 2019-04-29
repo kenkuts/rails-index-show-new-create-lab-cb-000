@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-describe Coupon do
+describe Cupon do
   before(:each) do
-    @coupon = Coupon.create!(coupon_code: "FREESTUFF", store: "Chipotle")
+    @cupon = Cupon.create!(cupon_code: "FREESTUFF", store: "Chipotle")
   end
 
   it 'can be created' do
-    expect(@coupon).to be_valid
+    expect(@cupon).to be_valid
   end
 end
